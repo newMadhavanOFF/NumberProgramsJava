@@ -18,3 +18,4 @@ else
 System.out.println("it is not a Armstrong number");
 }
 }
+

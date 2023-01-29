@@ -1,0 +1,18 @@
+PrimeNumber: *PrimeNumber is greaterthan 1 and divided by 1 or itself only
+             * can't divided by other Numbers
+             * Ex: 2,3,5,7,11..
+          
+          int num=4;
+          int count=0;
+          for(int i=1;i<num;i++){
+          if(num%i==0){
+          count++;
+          }
+          }
+          if(count==2){
+          System.out.println("Prime Number");
+          }
+          else{ 
+          System.out.println("not a Prime Number");
+          }
+          

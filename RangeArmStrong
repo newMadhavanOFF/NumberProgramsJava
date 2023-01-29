@@ -1,0 +1,32 @@
+class Armstrong{
+public static int isarm(int n){
+int t1=n;
+int length=0;
+while(t1>0){
+length=length+1;
+t1=t1/10;
+}
+int t2=n;
+int arm=0;
+int rem;
+while(t2>0){
+int mul=1;
+rem=t2%10;
+for(int i=1;i<=length;i++){
+mul=mul*rem;
+}
+arm=arm+mul;
+t2=t2/10;
+}
+if(arm==n)
+return 1;
+else
+return 0;
+}
+public static void main(String[] args){
+for(int i=1;i<=500;i++){
+if(isarm(i)==1)
+System.out.println(i);
+}
+}
+}          

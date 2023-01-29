@@ -1,0 +1,22 @@
+Palindrome: *A number is same after reverse.
+            *Ex: 545,151,343......
+import java.util.Scanner;
+class Palindrome
+{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a number ");
+int num=sc.nextInt();
+int sum=0,rem,temp=num;
+while(num>0){
+rem=num%10;
+sum=(sum*10)+rem;
+num=num/10;
+}
+if(sum==temp)
+System.out.println(" it is a palindrome");
+else {
+System.out.println("it is not a palindrome");
+}
+}
+}
